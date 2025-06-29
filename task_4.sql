@@ -1,14 +1,16 @@
+-- task_4.sql
 
+USE alx_book_store;
 
-SELECT 
+SELECT
     TABLE_NAME,
     COLUMN_NAME,
     COLUMN_TYPE,
     IS_NULLABLE,
     COLUMN_KEY,
     EXTRA
-FROM 
+FROM
     INFORMATION_SCHEMA.COLUMNS
-WHERE 
+WHERE
     TABLE_NAME = 'Books'
-    AND TABLE_SCHEMA = DATABASE();
+    AND TABLE_SCHEMA = 'alx_book_store';
